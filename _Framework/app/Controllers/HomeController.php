@@ -15,7 +15,7 @@ class HomeController
 	{
 		if($_SERVER['REQUEST_METHOD']==='POST') {
 			$pdo = db();
-			$statement = $pdo->prepare('INSERT INTO ausleihen (name, email, telefon, mitgliedschaft, ausgeleihtesvideo) VALUES (:name, :email, :telefon, :mitgliedschaft, :film);');
+			$statement = $pdo->prepare('INSERT INTO ausleihen (name, email, telefon, mitgliedschaft, ausgeleihtesvideo, ausleihstatus) VALUES (:name, :email, :telefon, :mitgliedschaft, :film, 1);');
 			if($_POST['name'] == '' ) {
 				echo "<script type='text/javascript'>window.alert('Bitte einen Namen eingeben'); window.location.href='home';</script>";
 			} elseif(!filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) {

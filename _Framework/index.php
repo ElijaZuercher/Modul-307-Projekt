@@ -5,10 +5,10 @@ $routes = [
 	'/home' => 'HomeController@index',
 	'/erfassen' => 'HomeController@erfassen',
 	'/ausleihen' => 'AusleihenController@index',
-	'/ausleihen' => 'AusleihenController@bearbeiten',
-	'/ausleihen' => 'AusleihenController@archiv',
+	'/ausleihen1' => 'AusleihenController@bearbeiten',
+	'/ausleihen2' => 'AusleihenController@archiv',
 	'/filme' => 'FilmeController@index',
-	'/filme' => 'FilmeController@erfassen',
+	'/filme1' => 'FilmeController@erfassen',
 ];
 
 $db = [

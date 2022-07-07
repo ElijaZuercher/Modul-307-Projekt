@@ -1,6 +1,6 @@
 <?php
 
-class AusleihenController
+class AusleiheController
 {
 	public function index()
 	{	

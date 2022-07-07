@@ -25,7 +25,8 @@
             <div class="ausgabesql">
                 <?php 
                         foreach ($result as $ausleihe){
-        	                echo("<div class='space'>"."<p class='pid'>".$ausleihe['id']."</p><p class='pname'>".$ausleihe['name']."</p><p class='pstatus'>".$ausleihe['ausleihstatus']."</p><p class='pfilm'>".$ausleihe['ausgeleihtesvideo']."</p></div>");
+                            $ausleiheid = $ausleihe['id'];
+        	                echo("<div class='space'>"."<a class='pid' href='filme?id=$ausleiheid'>".$ausleiheid."</a><p class='pname'>".$ausleihe['name']."</p><p class='pstatus'>".$ausleihe['ausleihstatus']."</p><p class='pfilm'>".$ausleihe['ausgeleihtesvideo']."</p></div>");
                         }
                 ?>
             </div>

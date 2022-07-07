@@ -4,7 +4,11 @@ class FilmeController
 {
 	public function index()
 	{	
-		
+		$pdo = db();
+		$statement = $pdo->prepare('SELECT * FROM ausleihen WHERE id=:id');
+		$statement->bindParam(':id', $_GET['id']);
+		$statement->execute(); // Abfrage wird ausgeführt
+		$result = $statement->fetchAll();
 		require 'app/Views/filme.view.php';
 	}
 	

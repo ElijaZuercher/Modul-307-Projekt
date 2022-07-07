@@ -125,9 +125,10 @@ input{
     flex-wrap: nowrap;
     justify-content: space-between;
     margin-left: 30px;
+    align-items: center;
 }
 .pid{
-    width: 5%;
+    width: 8%;
 }
 .pname{
     width: 30%;
@@ -136,5 +137,9 @@ input{
     width: 5%;
 }
 .pfilm{
-    width: 60%;
+    width: 57%;
+}
+a{
+    text-decoration: none;
+    color:black;
 }
