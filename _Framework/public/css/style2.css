@@ -1,0 +1,58 @@
+html{
+    background-color: #ECE5C7
+}
+@font-face {
+    font-family: Nurom;
+    src: url(Nurom-Bold.ttf);
+  }
+.container{
+    
+    background-color: #628884;
+    border-radius: 15px;
+    width: 1000px;
+    height: 800px;
+    margin-top: 2%;
+    
+}
+.überklasse{
+    display: flex;
+    justify-content: center;
+    
+}
+.button1{
+    width: 200px;
+    height: 30px;
+    margin-left: 20%;
+    font-size: 25px;
+    font-family: nurom;
+    margin-top: 4%;
+    border-radius: 8px;
+    color: black;
+    background-color: #ECE5C7;
+    border: 0px;
+}
+
+.items{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    margin-left: 20%;
+    font-size: 25px;
+    font-family: nurom;
+    margin-right: 40px;
+    
+
+
+}
+.items2{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    margin-top: 5%;
+    margin-left: 20%;
+    font-size: 25px;
+    font-family: nurom;
+    margin-right: 40px;
+
+}
+

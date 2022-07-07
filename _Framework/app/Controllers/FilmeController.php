@@ -4,10 +4,7 @@ class FilmeController
 {
 	public function index()
 	{	
-		$pdo = db();
-		$statement = $pdo->prepare('SELECT * FROM ausleihen');
-		$statement->execute(); // Abfrage wird ausgeführt
-		$result = $statement->fetchAll();
+		
 		require 'app/Views/filme.view.php';
 	}
 	
