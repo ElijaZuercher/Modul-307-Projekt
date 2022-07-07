@@ -8,7 +8,7 @@ $routes = [
 	'/ausleihen1' => 'AusleihenController@bearbeiten',
 	'/ausleihen2' => 'AusleihenController@archiv',
 	'/filme' => 'FilmeController@index',
-	'/filme1' => 'FilmeController@erfassen',
+	'/zurückgeben' => 'FilmeController@zurückgeben',
 ];
 
 $db = [

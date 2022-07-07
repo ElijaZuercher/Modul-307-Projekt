@@ -12,15 +12,18 @@
 <body>
     <div class="überklasse">
         <div class="container">
-            <div class="items2"><p>Id</p><?php $ausleihe = $result[0]; echo("<p>".$ausleihe['id']."</p>"); ?></div>
-            <div class="items"><p>Name</p><?php $ausleihe = $result[0]; echo("<p>".$ausleihe['name']."</p>"); ?></div>
-            <div class="items"><p>Email</p><?php $ausleihe = $result[0]; echo("<p>".$ausleihe['email']."</p>"); ?></div>
-            <div class="items"><p>Mitgliedschaft</p><?php $ausleihe = $result[0]; echo("<p>".$ausleihe['mitgliedschaft']."</p>"); ?></div>
-            <div class="items"><p>Video</p><?php $ausleihe = $result[0]; echo("<p>".$ausleihe['ausgeleihtesvideo']."</p>"); ?></div>
-            <div class="items"><p>Datum</p><?php $ausleihe = $result[0]; echo("<p>".$ausleihe['datum']."</p>"); ?></div>
-            <div class="items"><p>Ausleihestatus</p><?php $ausleihe = $result[0]; echo("<p>".$ausleihe['ausleihstatus']."</p>"); ?></div>
-            <button class="button1">Bearbeiten</button>
-            <button class="button1">Zurückgegeben</button>
+            <div class="items2"><p>Id</p><?php $ausleihe = $result[0]; $ausleiheid = $ausleihe['id']; echo("<p>".$ausleiheid."</p>"); ?></div>
+            <div class="items"><p>Name</p><?php   echo("<p>".$ausleihe['name']."</p>"); ?></div>
+            <div class="items"><p>Email</p><?php  echo("<p>".$ausleihe['email']."</p>"); ?></div>
+            <div class="items"><p>Mitgliedschaft</p><?php  echo("<p>".$ausleihe['mitgliedschaft']."</p>"); ?></div>
+            <div class="items"><p>Video</p><?php  echo("<p>".$ausleihe['ausgeleihtesvideo']."</p>"); ?></div>
+            <div class="items"><p>Datum</p><?php  echo("<p>".$ausleihe['datum']."</p>"); ?></div>
+            <div class="items"><p>Ausleihestatus</p><?php  echo("<p>".$ausleihe['ausleihstatus']."</p>"); ?></div>
+            <?php
+                echo("<a class='button1' href='zurückgeben?id=$ausleiheid'>Zurückgegeben</a>")
+            ?>
+            <a class="button1">Bearbeiten</a>
+            
 
 
         </div>
