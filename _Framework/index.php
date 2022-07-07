@@ -2,11 +2,17 @@
 require 'core/bootstrap.php';
 
 $routes = [
-	'/hallo/welt' => 'WelcomeController@index',
+	'/home' => 'HomeController@index',
+	'/erfassen' => 'HomeController@erfassen',
+	'/ausleihen' => 'AusleihenController@index',
+	'/ausleihen' => 'AusleihenController@bearbeiten',
+	'/ausleihen' => 'AusleihenController@archiv',
+	'/filme' => 'FilmeController@index',
+	'/filme' => 'FilmeController@erfassen',
 ];
 
 $db = [
-	'name'     => 'meinedatenbank',
+	'name'     => 'videothek',
 	'username' => 'root',
 	'password' => '',
 ];

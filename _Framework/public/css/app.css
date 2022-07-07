@@ -1,19 +1,184 @@
-body {
-    background-color: blanchedalmond;
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+*{
+    scroll-behavior: smooth;
 }
-.container {
-    background-color: white;
-    height: 100vh;
-    margin: 0 auto;
-    max-width: 600px;
-    padding: 50px 30px;
+html{
+    background-color: #436870;
 }
-h2 {
-    font-size: 18px;
+
+
+@font-face {
+    font-family: Nurom;
+    src: url(Nurom-Bold.ttf);
+  }
+
+.top{
+    display: flex; 
+    margin-left: 5%; 
+    margin-right: 5%;
+    margin-top: 3%;
+  }
+.topg{
+    width: 170px;
+    height: 35px;
+  }
+
+  .Home{
+    align-items: center;
+    font-family: 'nurom';
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 35px;
+  }
+  .Home:hover{
+    text-decoration: underline;
+  }  
+    
+.Filme{
+    align-items: center;
+    font-family: 'nurom';
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 35px;
 }
-a, a:visited {
-    color: #555;
+  
+.Filme:hover{
+    text-decoration: underline;
 }
+  
+.Kunden{
+    align-items: center;
+    font-family: 'nurom';
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 35px;
+}
+
+.Kunden:hover{
+    text-decoration: underline;
+}
+
+.AusleiheundErfassen{
+    display: flex;
+    margin-top: 6%;
+}
+.Ausleihe{
+    margin-left: 5%;
+    
+    width: 70%;
+    height: 80%;
+}
+.Erfassen{
+    margin-left: 5%;
+    margin-right: 5%;
+    width: 30%;
+    height: 80%;
+}
+
+.Ausleihe-übercontainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.Ausleihe-Text{
+    
+    font-family: 'nurom';
+    font-size: 35px;
+}
+
+.Ausleihe-Box{
+    display: flex;
+    background-color: violet;
+    width: 100%;
+    height: 700px;
+    border-radius: 20px;
+    font-family: 'nurom';
+    font-size: 35px;
+}
+.Box-kunde{
+    margin-top: 3%;
+    height: 90%;
+    
+    width: 500px;
+    margin-right: 3%;
+}
+.Box-id{
+    margin-top: 3%;
+    margin-right: 2%;
+    margin-left: 5%;
+    height: 90%;
+    
+}
+.Box-film{
+    margin-top: 3%;
+    height: 90%;
+    
+    width: 500px;
+    margin-right: 3%;
+}
+.Ausleihe-Status{
+    margin-top: 3%;
+    height: 90%;
+    
+    width: 130px;
+    margin-right: 3%;
+}
+.Ausleihe-Box2{
+    display: block;
+    justify-content: center;
+    background-color: violet;
+    width: 100%;
+    height: 700px;
+    border-radius: 20px;
+    font-family: 'nurom';
+    font-size: 35px;
+}
+.rechts{
+    display: flex;
+    justify-content: center;
+    padding-top: 8%;
+    padding-bottom: 3%;
+  }
+  .links{
+    margin-top: 8%;
+    margin-bottom: 8%;
+    background-color: #436870;
+    border-radius: 30px;
+    height:100%;
+    width: 25%;
+    font-family:'Nurom';
+    font-weight: bold;
+  }
+  .linkstext{
+    margin-bottom: 3%;
+    display: flex;
+    justify-content: center;
+    background-size: 40% 4px;
+    background-repeat: no-repeat;
+    line-height: 80px;
+    background-position: bottom;
+    font-size: 40px;
+    color: #2F4858
+  }
+  .footerrechts{
+    display: flex;
+    width: 100%;
+    height: 60%;
+    justify-content: center;
+    font-family: 'nurom';
+    font-size: 40px;
+    text-decoration: none;
+    
+  }
+  .inputfield{
+    text-align: center;
+    padding-top: 4px;
+  }
+  .mehrerauswahlen{
+    display: flex;
+    justify-content: center;
+  }

@@ -53,9 +53,10 @@ class Example
     /**
      * Erstellt einen neuen Eintrag in der Datenbank.
      */
-    public function create(): int
+    public function create()
     {
         // Dein Code...
+        
     }
     
     /**
