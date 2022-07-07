@@ -5,7 +5,7 @@ class HomeController
 	public function index()
 	{	
 		$pdo = db();
-		$statement = $pdo->prepare('SELECT * FROM ausleihen');
+		$statement = $pdo->prepare('SELECT * FROM ausleihen WHERE ausleihstatus=1');
 		$statement->execute(); // Abfrage wird ausgeführt
 		$result = $statement->fetchAll();
 		require 'app/Views/home.view.php'; 
