@@ -20,9 +20,8 @@
             <div class="items"><p>Datum</p><?php  echo("<p>".$ausleihe['datum']."</p>"); ?></div>
             <div class="items"><p>Ausleihestatus</p><?php  echo("<p>".$ausleihe['ausleihstatus']."</p>"); ?></div>
             <?php
-                echo("<a class='button1' href='zurückgeben?id=$ausleiheid'>Zurückgegeben</a>")
+                echo("<a class='button1' href='zurückgeben?id=$ausleiheid'>Zurückgegeben</a>"."<a class='button1' href='bearbeiten?id=$ausleiheid'>Bearbeiten</a>")
             ?>
-            <a class="button1">Bearbeiten</a>
             
 
 

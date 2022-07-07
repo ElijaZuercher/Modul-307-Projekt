@@ -22,5 +22,8 @@ class FilmeController
 		// Umleiten auf die Startseite
 		header("Location: filme?id=$ausleihid");
 	}
+	public function bearbeiten(){
+		echo("Ya mann");
+	}
 	
 }
