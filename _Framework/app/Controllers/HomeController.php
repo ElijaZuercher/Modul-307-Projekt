@@ -5,9 +5,12 @@ class HomeController
 	public function index()
 	{	
 		$pdo = db();
-		$statement = $pdo->prepare('SELECT * FROM ausleihen WHERE ausleihstatus=1');
+		$statement = $pdo->prepare('SELECT * FROM ausleihen WHERE ausleihstatus=1 ORDER BY id DESC');
 		$statement->execute(); // Abfrage wird ausgeführt
 		$result = $statement->fetchAll();
+		$statement = $pdo->prepare('SELECT * FROM movies');
+		$statement->execute();
+		$result2 = $statement->fetchAll();
 		require 'app/Views/home.view.php'; 
 	}
 	

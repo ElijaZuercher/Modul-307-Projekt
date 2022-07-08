@@ -43,12 +43,28 @@
                         <div class="rechts"><input name="name" type="text" class="inputfield" placeholder="Name" required></div>
                         <div class="rechts"><input name="email" type="email" class="inputfield" placeholder="E-Mail" required></div>
                         <div class="rechts"><input name="telefon" type="text" class="inputfield" placeholder="Telefon" ></div>
-                        <div class="rechts"><input name="film" type="text" class="inputfield" placeholder="Ausgeleihtes Video"required></div>
-                        <div class="mehrerauswahlen">Treue<select name="mitgliedschaft">
+                        <div class="mehrerauswahlen"><select name="film">
+                          <?php 
+                            foreach($result2 as $filmeaD) {
+                                $bol = true;
+                                foreach ($result as $ausleihe) {
+                                    if ($filmeaD['title'] == $ausleihe['ausgeleihtesvideo']) {
+                                        $bol = false;
+                                    } 
+                                }
+                                if($bol){
+                                    $filmname = $filmeaD['title'];
+                                    echo("<option value='$filmname'>$filmname</option>");
+                                }
+                                
+                            }
+                          ?>
+                          </select></div>
+                            <div class="mehrerauswahlen"><select name="mitgliedschaft">
+                            <option value="keine">Kundenmitgliedschaft</option>
                             <option value="Gold">Gold</option>
                             <option value="Silver">Silver</option>
                             <option value="Bronze">Bronze</option>
-                            <option value="keine">keine</option>
                           </select></div>
                         
                           <div class="rechts"><input type="submit" class="submitbutton" placeholder="Senden"></div>
