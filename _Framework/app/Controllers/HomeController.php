@@ -5,7 +5,7 @@ class HomeController
 	public function index()
 	{	
 		$pdo = db();
-		$statement = $pdo->prepare('SELECT * FROM ausleihen WHERE ausleihstatus=1 ORDER BY id DESC');
+		$statement = $pdo->prepare('SELECT * FROM ausleihen WHERE ausleihstatus=1 ORDER BY datum DESC');
 		$statement->execute(); // Abfrage wird ausgeführt
 		$result = $statement->fetchAll();
 		$statement = $pdo->prepare('SELECT * FROM movies');
