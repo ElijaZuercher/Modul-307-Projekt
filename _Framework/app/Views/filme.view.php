@@ -17,6 +17,7 @@
 </div>
     <div class="überklasse">
         <div class="container">
+            <form action="home">
             <div class="items2"><p>Id</p><?php $ausleihe = $result[0]; $ausleiheid = $ausleihe['id']; echo("<p>".$ausleiheid."</p>"); ?></div>
             <div class="items"><p>Name</p><?php   echo("<p>".$ausleihe['name']."</p>"); ?><div class="rechts"><input name="name" type="text" class="inputfield" placeholder="Name" required></div></div>
             <div class="items"><p>Email</p><?php  echo("<p>".$ausleihe['email']."</p>"); ?><div class="rechts"><input name="email" type="email" class="inputfield" placeholder="E-Mail" required></div></div>
@@ -26,12 +27,28 @@
                             <option value="Bronze">Bronze</option>
                             <option value="keine">keine</option>
                           </select></div></div>
-            <div class="items"><p>Video</p><?php  echo("<p>".$ausleihe['ausgeleihtesvideo']."</p>"); ?><div class="rechts"><input name="video" type="text" class="inputfield" placeholder="Video" required></div></div>
+            <div class="items"><p>Video</p><?php  echo("<p>".$ausleihe['ausgeleihtesvideo']."</p>"); ?><div class="rechts"><select name="film"><?php 
+                            foreach($result3 as $filmeaD) {
+                                $bol = true;
+                                foreach ($result2 as $ausleihe) {
+                                    if ($filmeaD['title'] == $ausleihe['ausgeleihtesvideo']) {
+                                        $bol = false;
+                                    } 
+                                }
+                                if($bol){
+                                    $filmname = $filmeaD['title'];
+                                    echo("<option value='$filmname'>$filmname</option>");
+                                }
+                                
+                            }
+                          ?></select></div></div>
             <div class="items"><p>Datum</p><?php  echo("<p>".$ausleihe['datum']."</p>"); ?><div class="rechts"><input name="datum" type="date" class="inputfield" placeholder="Datum" required></div></div>
             <div class="items"><p>Ausleihestatus</p><?php  echo("<p>".$ausleihe['ausleihstatus']."</p>"); ?></div>
             <?php
-                echo("<a class='button1' href='zurückgeben?id=$ausleiheid'>Zurückgegeben</a>"."<a class='button1' href='bearbeiten?id=$ausleiheid'>Bearbeiten</a>")
+                echo("<div><a class='button1' href='zurückgeben?id=$ausleiheid'>Züruckgeben</a></div>")
             ?>
+            <input type="submit" class="button1">
+            </form>
             
 
 

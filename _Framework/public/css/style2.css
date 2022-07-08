@@ -31,9 +31,9 @@ html{
     
 }
 .button1{
-    width: 200px;
+    width: 250px;
     height: 30px;
-    margin-left: 20%;
+    margin-left: 40%;
     font-size: 25px;
     font-family: nurom;
     margin-top: 5%;
@@ -41,6 +41,10 @@ html{
     color: black;
     background-color: #ECE5C7;
     border: 0px;
+    box-shadow: 2px 2px 5px 1px rgba(0,0,0,0.3);
+    display: flex;
+    justify-content: space-around;
+
 }
 
 .items{
@@ -51,9 +55,6 @@ html{
     font-size: 25px;
     font-family: nurom;
     margin-right: 40px;
-    
-
-
 }
 .items2{
     display: flex;
@@ -139,3 +140,4 @@ input{
     width: 200px;
     height: 50px;
 }
+
