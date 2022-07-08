@@ -10,7 +10,7 @@
 <body>
     <div class="top">
 
-        <div class="topg"><a href="#home" class="Home">Home</a></div>
+        <div class="topg"><a href="home" class="Home">Home</a></div>
 
     </div>
 
