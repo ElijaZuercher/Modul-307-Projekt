@@ -26,7 +26,23 @@
                 <?php 
                         foreach ($result as $ausleihe){
                             $ausleiheid = $ausleihe['id'];
-        	                echo("<div class='space'>"."<a class='pid' href='filme?id=$ausleiheid'>".$ausleiheid."</a><p class='pname'>".$ausleihe['name']."</p><p class='pstatus'>".$ausleihe['ausleihstatus']."</p><p class='pfilm'>".$ausleihe['ausgeleihtesvideo']."</p></div>");
+                            $tage = 30;
+                            $imgpfad = "glucklich.png";
+                            switch ($ausleihe['mitgliedschaft']) {
+                                case "Bronze":
+                                    $tage = 40;
+                                    break;
+                                case "Silver":
+                                    $tage = 50;
+                                    break;
+                                case "Gold":
+                                    $tage = 70;
+                                    break;
+                            }
+                            if(date('Y-m-d', strtotime($ausleihe['datum'].' + '.$tage.' days')) < date('Y-m-d')){
+                                $imgpfad = "angry.png";
+                            }
+                            echo("<div class='space'>"."<a class='pid' href='filme?id=$ausleiheid'>".$ausleiheid."</a><p class='pname'>".$ausleihe['name']."</p><img src='public/".$imgpfad."' class='pstatus'>"."<p class='pfilm'>".$ausleihe['ausgeleihtesvideo']."</p></div>");
                         }
                 ?>
             </div>
