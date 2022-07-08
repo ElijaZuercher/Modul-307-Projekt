@@ -34,8 +34,8 @@
                         <?php 
                             foreach($result3 as $filmeaD) {
                                 $bol = true;
-                                foreach ($result2 as $ausleihe) {
-                                    if ($filmeaD['title'] == $ausleihe['ausgeleihtesvideo']) {
+                                foreach ($result2 as $ausleihe1) {
+                                    if ($filmeaD['title'] == $ausleihe1['ausgeleihtesvideo']) {
                                         $bol = false;
                                     } 
                                 }
@@ -47,15 +47,12 @@
                         ?>
                     </select></div></div>
                 <div class="items"><p>Datum</p><?php  echo("<p>".date($ausleihe['datum'])."</p>"); ?><div class="rechts"><input name="datum" type="date" class="inputfield" placeholder="Datum" ></div></div>
-                <div class="items"><p>Ausleihestatus</p><?php  echo("<p>".$ausleihe['ausleihstatus']."</p>"); ?></div>
+                <div class="items"><p>Ausleihestatus</p><?php echo("<p>".$ausleihe['ausleihstatus']."</p>"); ?></div>
                 <?php
                     echo("<div><a class='button1' href='zurückgeben?id=$ausleiheid'>Züruckgeben</a></div>")
                 ?>
-                <input type="submit" class="button1">
+                <button type="submit" class="button1" >Speichern</button>
             </form>
-            
-
-
         </div>
     </div>
 

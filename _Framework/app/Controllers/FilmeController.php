@@ -35,40 +35,39 @@ class FilmeController
 		$mitgliedschaft = $_POST['mitgliedschaft'];
 		$film = $_POST['film'];
 		$datum = $_POST['datum'];
+		$id = $_GET['id'];
 		if($name != ""){
 			$statement = $pdo->prepare('UPDATE ausleihen SET name = :name WHERE id = :id');
-			$statement->bindParam(':id', $_GET['id']);
+			$statement->bindParam(':id', $id);
 			$statement->bindParam(':name', $name);
 			$statement->execute();
 		}
 		if($email != ""){
 			$statement = $pdo->prepare('UPDATE ausleihen SET email = :email WHERE id = :id');
-			$statement->bindParam(':id', $_GET['id']);
+			$statement->bindParam(':id', $id);
 			$statement->bindParam(':email', $email);
 			$statement->execute();
 		}
 		if($mitgliedschaft != ""){
 			$statement = $pdo->prepare('UPDATE ausleihen SET mitgliedschaft = :mitgliedschaft WHERE id = :id');
-			$statement->bindParam(':id', $_GET['id']);
+			$statement->bindParam(':id', $id);
 			$statement->bindParam(':mitgliedschaft', $mitgliedschaft);
 			$statement->execute();
 		}
 		if($film != ""){
 			$statement = $pdo->prepare('UPDATE ausleihen SET ausgeleihtesvideo = :film WHERE id = :id');
-			$statement->bindParam(':id', $_GET['id']);
+			$statement->bindParam(':id', $id);
 			$statement->bindParam(':film', $film);
 			$statement->execute();
 		}
 		if($datum != NULL){
 			$statement = $pdo->prepare('UPDATE ausleihen SET datum = :datum WHERE id = :id');
-			$statement->bindParam(':id', $_GET['id']);
+			$statement->bindParam(':id', $id);
 			$statement->bindParam(':datum', $datum);
 			$statement->execute();
 		}
-		//$statement->execute();
-		//$ausleihid = $_GET['id'];
 		// Umleiten auf die Startseite
-		//header("Location: filme?id=$ausleihid");
+		header("Location: filme?id=$id");
 		var_dump($_POST);
 	}
 	
