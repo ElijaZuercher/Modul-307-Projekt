@@ -58,35 +58,33 @@ html{
     font-family: Nurom;
     font-size: 30px;
 }
-.textitem{
-    padding-top: 20px;
-    font-family: nurom;
-    font-size: 25px;
-    padding-bottom: 10px;
-}
-.textitem1{
-    padding-top: 20px;
-    font-family: nurom;
-    font-size: 25px;
-    padding-bottom: 10px;  
-}
 .textitem1{
     padding-top: 20px;
     font-family: nurom;
     font-size: 25px;
     padding-bottom: 10px;
+    padding-left: 35px;  
 }
-.textitem1{
+.textitem2{
     padding-top: 20px;
     font-family: nurom;
     font-size: 25px;
     padding-bottom: 10px;
+    padding-left: 75px;
 }
-.textitem1{
+.textitem3{
     padding-top: 20px;
     font-family: nurom;
     font-size: 25px;
     padding-bottom: 10px;
+    padding-left: 180px;
+}
+.textitem4{
+    padding-top: 20px;
+    font-family: nurom;
+    font-size: 25px;
+    padding-bottom: 10px;
+    padding-left: 10px;
 }
 
 .Ausleihe-übercontainer{
