@@ -48,6 +48,23 @@
                     </select></div></div>
                 <div class="items"><p>Datum</p><?php  echo("<p>".date($ausleihe['datum'])."</p>"); ?><div class="rechts"><input name="datum" type="date" class="inputfield" placeholder="Datum" ></div></div>
                 <div class="items"><p>Ausleihestatus</p><?php echo("<p>".$ausleihe['ausleihstatus']."</p>"); ?></div>
+                <div class="items"><p>Rückgabedatum</p>
+                    <?php 
+                        $tage = 30;
+                        switch ($ausleihe['mitgliedschaft']) {
+                            case "Bronze":
+                                $tage = 40;
+                                break;
+                            case "Silver":
+                                $tage = 50;
+                                break;
+                            case "Gold":
+                                $tage = 70;
+                                break;
+                        }
+                        echo(date('Y-m-d', strtotime($ausleihe['datum'].' + '.$tage.' days'))); 
+                    ?>
+                </div>
                 <?php
                     echo("<div><a class='button1' href='zurückgeben?id=$ausleiheid'>Züruckgeben</a></div>")
                 ?>
