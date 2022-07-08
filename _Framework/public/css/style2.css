@@ -9,7 +9,7 @@ html{
     
     background-color: #628884;
     border-radius: 15px;
-    width: 1000px;
+    width: 1200px;
     height: 800px;
     margin-top: 2%;
     
@@ -47,7 +47,7 @@ html{
     display: flex;
     justify-content: space-between;
     flex-wrap: nowrap;
-    margin-left: 20%;
+    margin-left: 10%;
     font-size: 25px;
     font-family: nurom;
     margin-right: 40px;
@@ -60,7 +60,7 @@ html{
     justify-content: space-between;
     flex-wrap: nowrap;
     margin-top: 5%;
-    margin-left: 20%;
+    margin-left: 10%;
     font-size: 25px;
     font-family: nurom;
     margin-right: 40px;
@@ -81,3 +81,61 @@ a{
   .Home:hover{
     text-decoration: underline;
   } 
+  select {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    border: none;
+    width: 100%;
+    height: 40px;
+    -moz-padding-start: calc(10px - 3px);
+    padding-left: 10px;
+    background: url(fff-0-2.png) repeat;
+    color: black;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    box-shadow: 2px 2px 5px 1px rgba(0,0,0,0.3);
+  border-radius: 3px;
+  outline: none;
+  background-color: transparent;
+  cursor: pointer;
+  }
+  select::-ms-expand {
+    display: none;
+  }
+
+input{
+    background-color: #8AA897;
+    border-radius: 8px;
+    height: 50px;
+    width: 300px;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    border: none;
+    width: 100%;
+    height: 40px;
+    -moz-padding-start: calc(10px - 3px);
+    padding-left: 10px;
+    background: url(fff-0-2.png) repeat;
+    color: black;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    box-shadow: 2px 2px 5px 1px rgba(0,0,0,0.3);
+  border-radius: 3px;
+  outline: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+.inputfield{
+    text-align: center;
+    padding-top: 4px;
+  }
+.rechts2{
+    width: 200px;
+    height: 50px;
+}
+.rechts{
+    width: 200px;
+    height: 50px;
+}
