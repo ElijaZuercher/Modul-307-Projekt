@@ -70,3 +70,14 @@ a{
     text-decoration: none;
     color:black;
 }
+.Home{
+    align-items: center;
+    font-family: 'nurom';
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 35px;
+  }
+  .Home:hover{
+    text-decoration: underline;
+  } 

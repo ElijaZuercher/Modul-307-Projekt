@@ -17,10 +17,10 @@
     <div class="container">
         <div class="andere">
             <div class="Textüberschrifft">
-                <div class="textitem" >Id</div>
-                <div class="textitem">Kunde</div>
-                <div class="textitem">Status</div>
-                <div class="textitem">Film</div>
+                <div class="textitem1" >Id</div>
+                <div class="textitem2">Kunde</div>
+                <div class="textitem3">Status</div>
+                <div class="textitem4">Film</div>
             </div>
             <div class="ausgabesql">
                 <?php 
