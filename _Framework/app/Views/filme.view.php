@@ -10,6 +10,11 @@
 </head>
 
 <body>
+<div class="top">
+
+<div class="topg"><a href="#home" class="Home">Home</a></div>
+
+</div>
     <div class="überklasse">
         <div class="container">
             <div class="items2"><p>Id</p><?php $ausleihe = $result[0]; $ausleiheid = $ausleihe['id']; echo("<p>".$ausleiheid."</p>"); ?></div>
